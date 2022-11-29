@@ -1,17 +1,20 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = ["Magomedrasul Kurbanov <rasulich96@yandex.ru>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.8.1"
 prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
