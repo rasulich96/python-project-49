@@ -4,6 +4,14 @@ import prompt
 import sys
     
 
+def get_question_even_game():
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
+
+def get_question_calc_game():
+    print('What is the result of the expression?')
+
+
 def welcome_user():
     print('Welcome to the Brain Games!')
     username = prompt.string('May I have your name? ')
@@ -61,7 +69,7 @@ def get_answer_even(random_number):
 
 def get_answer_calc(random_number_1, random_number_2, operation):
     print(f'Question: {random_number_1} {operation} {random_number_2}')
-    answer = prompt.int('You answer: ')
+    answer = prompt.integer('You answer: ')
     return answer
 
 
@@ -86,6 +94,8 @@ def check_answer_calc(
     correct_answer = get_correct_answer_for_calc_game(
         random_number_1, random_number_2, operation
     )
+    if operation == '/':
+        print('enter an integer without div!')
     if correct_answer == answer:
         print('Correct!')
         score += 1
