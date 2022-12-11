@@ -26,7 +26,7 @@ def checking_result(select_game):
                 f"'{answer}' is wrong answer ;(. Correct answer was '{result}'"
             )
             # завершаем программу при ошибке
-            sys.exit(f"Let's try again, {username}!")
+            return print(f"Let's try again, {username}!")
         else:
             print('Correct!')
             score += 1
