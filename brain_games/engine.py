@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import prompt
-import sys
 
 
 def welcome_user():
@@ -16,6 +15,7 @@ def checking_result(select_game):
     print(select_game.QUESTION)
     score = 0
     while score != 3:
+        # Забираем с каждой игры правильный результат и задаваемый вопрос
         result, question = select_game.game_func()
         print(question)
         answer = prompt.string('Your answer: ').lower()
