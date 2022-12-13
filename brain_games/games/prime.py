@@ -2,7 +2,7 @@
 import random
 
 
-QUESTION = 'Answer "yes" if given number is prime. Otherwise answe "no"'
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no"'
 
 
 def is_prime(number):
@@ -13,7 +13,6 @@ def is_prime(number):
     while div > 1:
         if number % div == 0:
             result = 'no'
-            print(result)
             return result
         else:
             div -= 1
