@@ -3,7 +3,7 @@ import random
 import math
 
 
-QUESTION = 'Find the gratest common divisor of given numbers.'
+QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
 def game_func():
