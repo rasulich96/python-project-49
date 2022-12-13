@@ -18,5 +18,5 @@ def game_func():
         result = random_number_1 * random_number_2
     question = str(
         f'Question: {random_number_1} {random_operation} {random_number_2}'
-        )
+    )
     return str(result), question
