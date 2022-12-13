@@ -22,7 +22,9 @@ def get_random_progression():
         # Добавляем в список значения с вычислением шага
         # [number - 1] нужен т.к. в данной итерации еще нет индекса number
         # а прогрессия у нас предыдущий индекс + шаг прогрессии
-        random_progression.append(random_progression[number - 1] + step_progression)
+        random_progression.append(
+            random_progression[number - 1] + step_progression
+            )
     # Инициализация рандомного индекса для скрытия
     random_hidden_number = random.randint(0, lenght_random_progression - 1)
     # Сохраняем значение рандомного индекса для проверки ответа пользователя
