@@ -20,7 +20,7 @@
 Ниже приведены аскинемы по запуску, выигрышу и проигрышу в различных играх:
 
 Playing brain-even:
-[![asciicast](https://asciinema.org/a/Qn2nzbI3hd3dFPLLib4qNTMDo.svg)](https://asciinema.org/a/Qn2nzbI3hd3dFPLLib4qNTMDo)
+[![asciicast](https://asciinema.org/a/h4RiJQJbhgrD1eSKuT6P1DTDB.svg)](https://asciinema.org/a/h4RiJQJbhgrD1eSKuT6P1DTDB)
 
 Playing brain-calc:
 [![asciicast](https://asciinema.org/a/eSvRxTtySAr2SD3AKJBHirAZf.svg)](https://asciinema.org/a/eSvRxTtySAr2SD3AKJBHirAZf)
