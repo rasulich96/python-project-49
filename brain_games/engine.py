@@ -1,22 +1,16 @@
-#!/usr/bin/env python3
 import prompt
 
 
-def welcome_user():
+def start_game(selected_game):
     print('Welcome to the Brain Games!')
     username = prompt.string('May I have your name? ')
     print(f'Hello, {username}!')
-    return username
-
-
-def checking_result(select_game):
-    username = welcome_user()
     # Выводим на экран условие выбранной игры
-    print(select_game.QUESTION)
+    print(selected_game.QUESTION)
     score = 0
     while score != 3:
         # Забираем с каждой игры правильный результат и задаваемый вопрос
-        result, question = select_game.game_func()
+        result, question = selected_game.build_game()
         print(question)
         answer = prompt.string('Your answer: ').lower()
         # Сначала проверим ошибку, чтобы сразу завершить программу при ошибке,

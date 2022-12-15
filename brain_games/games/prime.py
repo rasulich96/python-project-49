@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import random
 
 
@@ -21,7 +20,7 @@ def is_prime(number):
     return result
 
 
-def game_func():
+def build_game():
     random_number = random.randint(1, 99)
     question = f'Question: {random_number}'
     result = is_prime(random_number)
