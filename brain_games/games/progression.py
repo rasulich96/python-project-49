@@ -29,5 +29,5 @@ def build_game():
     # Заменяем значение рандомного индекса на ..
     random_progression[random_hidden_number] = '..'
     # Убираем кавычки от скрытого номера
-    question = str(f"Question: {' '.join(str(i) for i in random_progression)}")
+    question = f"Question: {' '.join(str(i) for i in random_progression)}"
     return str(result), question

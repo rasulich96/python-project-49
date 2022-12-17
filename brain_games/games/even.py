@@ -14,9 +14,9 @@ def is_number_even(number):
 def build_game():
     random_number = random.randint(1, 99)
     result = ''
-    if is_number_even(random_number) is True:
+    if is_number_even(random_number):
         result = 'yes'
     else:
         result = 'no'
-    question = str(f'Question: {random_number}')
+    question = f'Question: {random_number}'
     return result, question

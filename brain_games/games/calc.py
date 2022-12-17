@@ -24,7 +24,7 @@ def build_game():
     result = get_expression_result(
         random_number_1, random_number_2, random_expression
     )
-    question = str(
+    question = (
         f'Question: {random_number_1} {random_expression} {random_number_2}'
     )
     return str(result), question
